@@ -46,7 +46,6 @@ public class AnDao {
 			String query = "insert into member(id, passwd, name, phonenumber, address) " + 
 			               "values('" + id + "', '" + passwd + "', '" + name + "', '" + 
 					        			phonenumber + "', '" + address + "' )";
-			System.out.println(query);
 			prepareStatement = connection.prepareStatement(query);
 			state = prepareStatement.executeUpdate();
 			
